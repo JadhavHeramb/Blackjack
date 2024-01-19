@@ -109,7 +109,7 @@ public class FirstDraw  {
 
 		playerTotal();
 		dealerTotal();
-		Thread.sleep(500) ;
+		Thread.sleep(1) ;
 		winner();
 		
 	}
@@ -164,9 +164,15 @@ public class FirstDraw  {
 			wel.greet();
 		}
 		
-		else if (add1 < add2 && (add2 <=21))
+		else if ((add1 < add2) && (add2 <=21))
 		{
 			System.out.println("You lose to Dealer");
+			wel.greet();
+		}
+		
+		else if (add2 > 21)
+		{
+			System.out.println("Congratulations you won. Dealer burst !");
 			wel.greet();
 		}
 	}
